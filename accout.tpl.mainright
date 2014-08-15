@@ -1,0 +1,54 @@
+<?php echo $header; ?>  
+<div class="breadcrumb">
+    <?php foreach ($breadcrumbs as $breadcrumb) { ?>
+    <?php echo $breadcrumb['separator']; ?><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a>
+    <?php } ?>
+  </div>
+<?php if ($success) { ?>
+<div class="success"><?php echo $success; ?></div>
+<?php } ?>
+<?php echo $column_left; ?><?php echo $column_right; ?>
+<div class="container cf m-main uc-index"><?php echo $content_top; ?> 
+ <!-- 右主体 -->
+  <div class="main-r">
+    <!-- 右上 -->
+    <div class="uc-cont-hd">
+  <a target="_blank" href="<?php echo $account; ?>" title="点击更换头像">
+  <img src="http://statics.oneplus.cn/img/passport/default.png"  class="avatar" height="120" width="120">
+   </a>
+   <dl>
+    <dt>
+    </dt>
+    <dd class="tel nobind"><a target="_blank" href="#">绑定手机</a></dd>
+    <dd class="email isbind"><a target="_blank" href="#">更改邮箱</a></dd>
+    <dd class="uc-info-modify"><a target="_blank" href="#">更改用户名</a></dd>
+  </dl>
+  <div class="clear" style="clear:both;visiable:hidden; height:10px;"></div>
+    </div>
+    <!-- 右中 -->
+    <section>
+            <div class="uc-cont-body">
+                <!--待付款订单-->
+                    <div class="tab-box">
+                        <div class="tab-con">
+                            <header><div class="tab-box-header">
+                              <strong>待付款订单</strong></div></header>
+                            <!-- 有内容就现实这个div ，并且把内容加入进去-->
+                          </div>
+                    </div>
+
+                    <!--待收货订单-->
+                    <div class="tab-box">
+                        <div class="tab-con">
+                            <header><div class="tab-box-header"><strong>待收货订单</strong></div></header>
+                          </div>
+                      </div>
+            </div>
+            </section>
+  </div>
+</div>
+
+
+  <?php echo $content_bottom; ?>
+</div>
+<?php echo $footer; ?> 
