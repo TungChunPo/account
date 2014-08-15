@@ -1,0 +1,24 @@
+<nav>
+            <div class="main-l">
+                <dl class="l-menu">
+                    <dt><?php echo $text_account; ?><i class="icon-info"></i></dt>
+                    <dd>
+                        <a href="<?php echo $order; ?>" class="order"><?php echo $text_order; ?></a>
+                        <a href="<?php echo $reward;?>"class="score"><?php echo $text_reward;?></a>
+                        <a href="<?php echo $address; ?>" class="address"><?php echo $text_address;?><i></i></a>
+                        <a href="" class="coupon">我的优惠券<i></i></a>
+                        <a href="" class="book">我的预约<i></i></a>
+                        <a href="<?php echo $wishlist; ?>" class="prize"><?php echo $text_wishlist; ?><i></i></a>
+                        <a href="" class="authentication">产品认证<i></i></a>
+                    </dd>
+                </dl>
+                        <dl class="l-menu">
+                    <dt><?php echo $text_header2; ?><i class="icon-ass"></i></dt>
+                    <dd>
+                        <a href="<?php echo $return; ?>" class="return"><?php echo $text_return;?><i></i></a>
+                        <a href=" " class="replace">换货单<i></i></a>
+                        <a href=" " class="repair">维修单<i></i></a>
+                    </dd>
+                </dl>
+                            </div>
+        </nav>
